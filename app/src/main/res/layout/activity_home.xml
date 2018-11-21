@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp">
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now Showing .."
+                android:textColor="#212224"
+                android:textSize="23sp" />
+
+
+            <Spinner
+                android:id="@+id/sp_car_name"
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/custom_spinner"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="55dp"
+                android:src="@drawable/tempiconmenu"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="38.06dp"
+                android:layout_height="38.06dp"
+                android:src="@drawable/photo"
+                android:layout_marginLeft="30dp"
+                app:civ_border_color="#FF000000" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingLeft="10dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="28.8dp"
+        android:layout_marginLeft="28.8dp">
+
+        <customfonts.MyTextView_Roboto_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="All Movies"
+            android:textColor="#212224"
+            android:textSize="17.3dp" />
+
+
+        <customfonts.MyTextView_Roboto_Medium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View all"
+            android:textColor="#2050d5"
+            android:textSize="13.5dp" />
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:clipToPadding="false"
+        android:paddingBottom="20dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
